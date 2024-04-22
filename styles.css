@@ -29,6 +29,26 @@ header {
   -webkit-backdrop-filter: blur(10px);
 }
 
+.btn {
+  background-color: #950101;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #550000;
+}
+
 header.hidden {
   transition: transform 0.3s ease-in-out
   transform: translateY(-100%);
@@ -125,7 +145,7 @@ h1 {
 }
 
 .server-row {
-  margin-bottom: 10px; /* Adds 8px margin bottom */
+  margin-bottom: 10px;
 }
 
 .server-row.highlight {
