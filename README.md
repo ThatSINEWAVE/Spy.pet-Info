@@ -28,6 +28,9 @@ All credit to the original files and investigations goes to their owners, in cas
 - `kts_tester_output.json` - output file for `kts_tester.py`
 - `scanner.py` - Script used to check the Discord IDs inside `ids.json` with Discord's API
 - `scanner_output.json` - output file for `scanner.py`
+- `index.html` - Main HTML file for the web interface.
+- `styles.css` - Main CSS file for the web interface.
+- `script.js` - Main JavaScript file for the web interface.
 
 
 ## Bot accounts used by Spy.pet
@@ -56,7 +59,7 @@ the following list contains confirmed bot accounts via an API vulnerability disc
 |   19   | 1185034806908682281 |     phillipunan0861_14052     |          Phillipunan          | ![Profile-Image](https://cdn.discordapp.com/avatars/1185034806908682281/25054e50abfff75fe38ba6e16b3b0978) | 
 |   20   | 1185046309976166460 |  michael71kmkebay0523_43623   |       Michael71kmkebAy        | ![Profile-Image](https://cdn.discordapp.com/avatars/1185046309976166460/c7ec166026a0718a8f4153b89fe4c318) | 
 |   21   | 928561259069177947  |           super5819           |             Super             | ![Profile-Image](https://cdn.discordapp.com/avatars/928561259069177947/568ae001a82b513b6838820efa46d2f0)  | 
-|   22   | 1185046163473309696 |  richard87vplibij0153_16225   |       Richard87vplibIj        |                                                   NONE                                                    | 
+|   22   | 1185046163473309696 |  richard87vplibij0153_16225   |       Richard87vplibIj        | [Profile-Image](https://cdn.discordapp.com/embed/avatars/1.png)                                           | 
 |   23   | 956350881241104495  |            nauke._            |             NONE              | ![Profile-Image](https://cdn.discordapp.com/avatars/956350881241104495/3fa949a01e62d5ed73345ef210653034)  | 
 |   24   | 978778806863151114  |            rpi1893            |             NONE              | ![Profile-Image](https://cdn.discordapp.com/avatars/978778806863151114/dfd7f01b94b75f7f417f6fa5cd35b698)  | 
 |   25   | 923404990511480852  |      swiftknight7019498       |        SwiftKnight701         | ![Profile-Image](https://cdn.discordapp.com/avatars/923404990511480852/c27780f15495185b385f20320b129d2a)  | 
@@ -159,7 +162,7 @@ the following list contains confirmed bot accounts via an API vulnerability disc
 |  122   | 956202276408688650  |           slade4945           |             Slade             | ![Profile-Image](https://cdn.discordapp.com/avatars/956202276408688650/5c5622a970883d9eff8bae6b478e5615)  | 
 |  123   | 1185036303155335240 |      juanatoc_464_16174       |           Juanatoc            | ![Profile-Image](https://cdn.discordapp.com/avatars/1185036303155335240/74d4773bc17a30a56535c021fe01c923) | 
 |  124   | 932067526681186414  |          talaan7447           |            Talaan             | ![Profile-Image](https://cdn.discordapp.com/avatars/932067526681186414/32cef82424e1684f48c96a4e61dd3ad6)  | 
-|  125   | 956210819325132921  |          tomasiko69           |             NONE              |          ![Profile-Image](https://cdn.discordapp.com/avatars//1d3bab8fb0554a7b6a003600f8c27698)           | 
+|  125   | 956210819325132921  |          tomasiko69           |             NONE              | ![Profile-Image](https://cdn.discordapp.com/avatars/956210819325132921/1d3bab8fb0554a7b6a003600f8c27698)  | 
 |  126   | 1172073543836631040 |           katrifbo            |           katrifbo            | ![Profile-Image](https://cdn.discordapp.com/avatars/1172073543836631040/30882e7b1a3e6d154feb4d06109ae19e) | 
 |  127   | 1185039095211241552 |      frankerawbanc_70119      |           Frankeraw           | ![Profile-Image](https://cdn.discordapp.com/avatars/1185039095211241552/428403842226837fe4cca6582f758149) | 
 |  128   | 1185043232661450814 |   christopher35ho0241_45629   |         LoganBrickman         | ![Profile-Image](https://cdn.discordapp.com/avatars/1185043232661450814/c7ec166026a0718a8f4153b89fe4c318) | 
