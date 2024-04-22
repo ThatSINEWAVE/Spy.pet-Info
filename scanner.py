@@ -31,7 +31,7 @@ for user_id in user_ids:
         user_data['entry_number'] = entry_number
 
         # Append the user information to the output JSON file with a newline character
-        with open('scanner_output.json', 'a') as output_file:
+        with open('data/scanner_output.json', 'a') as output_file:
             json.dump(user_data, output_file, indent=4)
             output_file.write('\n')  # Add a newline character
 
