@@ -1,13 +1,23 @@
-# Spy.pet Info
+<div align="center">
+
+# [Spy.pet Info](https://thatsinewave.github.io/Spy.pet-Info)
  
 This repository serves as an index for all info the community has gathered on the Spy.pet situation and as well as my own tables and tools written for these investigations.
 All credit to the original files and investigations goes to their owners, in case I forgot to credit someone please contact me ASAP, thanks!
+
+</div>
 
 ## Credits
 
 - data/ids.json - originally found by [kickthespy.pet](https://kickthespy.pet) using an API vulnerability.
 - data/servers.json - big thanks to [youcoldyet](https://github.com/youcoldyet/spy-bot-serverlist) for scraping and compiling the giant lists of servers by Spy.pet.
 - data/servers_and_ids.json - big thanks to [youcoldyet](https://github.com/youcoldyet/spy-bot-serverlist) for scraping and compiling the giant lists of servers by Spy.pet.
+
+<div align="center">
+
+## ☕ [Support my work on Ko-Fi](https://ko-fi.com/thatsinewave)
+
+</div>
 
 ## Repository Structure
 
