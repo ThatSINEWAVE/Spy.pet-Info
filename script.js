@@ -53,6 +53,26 @@ function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
   });
 }
 
+// Function to setup sticky header
+function setupStickyHeader() {
+  const header = document.querySelector('header');
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+
+    if (currentScrollPos > prevScrollPos) {
+      // Scrolling down, hide the header
+      header.classList.add('hidden');
+    } else {
+      // Scrolling up, show the header
+      header.classList.remove('hidden');
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+}
+
 // Function to setup search bar
 function setupSearchBar(scannerOutputData, serversAndIdsData) {
   const searchInput = document.getElementById('search-input');
