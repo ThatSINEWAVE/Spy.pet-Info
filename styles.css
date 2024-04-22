@@ -1,9 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: #ddd;
+  background-image: linear-gradient(to bottom right, #151515, #222);
   margin: 0;
   padding: 0;
-  background-color: #1c1c1c;
-  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -13,15 +21,42 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #2b2d30;
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header.hidden {
+  transition: transform 0.3s ease-in-out
+  transform: translateY(-100%);
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
 }
 
 h1 {
@@ -51,7 +86,7 @@ h1 {
 .user-container {
   background-color: #333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .user-info {
@@ -90,14 +125,19 @@ h1 {
   margin-right: 10px;
 }
 
+.server-row {
+  margin-bottom: 10px; /* Adds 8px margin bottom */
+}
+
 .server-row.highlight {
   background-color: #555;
 }
 
 footer {
-  background-color: #333;
-  padding: 10px 0;
+  background-color: #2b2d30;
+  padding: 20px;
   text-align: center;
-  margin-top: 20px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
 }
