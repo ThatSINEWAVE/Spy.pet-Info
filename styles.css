@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  padding: 8px 30px 8px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #444;
+  color: #fff;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.user-container {
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #444;
+  cursor: pointer;
+}
+
+.user-info:hover {
+  background-color: #555;
+}
+
+.user-info i {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.user-info.open i {
+  transform: rotate(180deg);
+}
+
+.server-list {
+  display: none;
+  padding: 12px;
+}
+
+.user-info.open + .server-list {
+  display: block;
+}
+
+.avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.server-row.highlight {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
