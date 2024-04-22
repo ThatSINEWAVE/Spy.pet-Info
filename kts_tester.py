@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     # Load existing results from the JSON file or initialize an empty list
     try:
-        with open("kts_tester_output.json", "r") as f:
+        with open("data/kts_tester_output.json", "r") as f:
             results = json.load(f)
     except (FileNotFoundError, json.decoder.JSONDecodeError):
         results = []  # Initialize as an empty list
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     results.append(result)
 
     # Save the updated list to the JSON file
-    with open("kts_tester_output.json", "w") as f:
+    with open("data/kts_tester_output.json", "w") as f:
         json.dump(results, f, indent=4)
 
     # Print the result
