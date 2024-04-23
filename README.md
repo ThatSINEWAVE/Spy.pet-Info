@@ -59,7 +59,7 @@ the following list contains confirmed bot accounts via an API vulnerability disc
 |   19   | 1185034806908682281 |     phillipunan0861_14052     |          Phillipunan          | ![Profile-Image](https://cdn.discordapp.com/avatars/1185034806908682281/25054e50abfff75fe38ba6e16b3b0978) | 
 |   20   | 1185046309976166460 |  michael71kmkebay0523_43623   |       Michael71kmkebAy        | ![Profile-Image](https://cdn.discordapp.com/avatars/1185046309976166460/c7ec166026a0718a8f4153b89fe4c318) | 
 |   21   | 928561259069177947  |           super5819           |             Super             | ![Profile-Image](https://cdn.discordapp.com/avatars/928561259069177947/568ae001a82b513b6838820efa46d2f0)  | 
-|   22   | 1185046163473309696 |  richard87vplibij0153_16225   |       Richard87vplibIj        | [Profile-Image](https://cdn.discordapp.com/embed/avatars/1.png)                                           | 
+|   22   | 1185046163473309696 |  richard87vplibij0153_16225   |       Richard87vplibIj        |                     ![Profile-Image](https://cdn.discordapp.com/embed/avatars/1.png)                      | 
 |   23   | 956350881241104495  |            nauke._            |             NONE              | ![Profile-Image](https://cdn.discordapp.com/avatars/956350881241104495/3fa949a01e62d5ed73345ef210653034)  | 
 |   24   | 978778806863151114  |            rpi1893            |             NONE              | ![Profile-Image](https://cdn.discordapp.com/avatars/978778806863151114/dfd7f01b94b75f7f417f6fa5cd35b698)  | 
 |   25   | 923404990511480852  |      swiftknight7019498       |        SwiftKnight701         | ![Profile-Image](https://cdn.discordapp.com/avatars/923404990511480852/c27780f15495185b385f20320b129d2a)  | 
