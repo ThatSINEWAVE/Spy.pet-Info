@@ -29,19 +29,6 @@ header {
   -webkit-backdrop-filter: blur(10px);
 }
 
-.stats-container {
-  background-color: #444;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5px;
-  margin-bottom: 25px;
-}
-
-.stats-container span {
-  font-weight: bold;
-}
-
 .btn {
   background-color: #950101;
   color: #fff;
@@ -63,7 +50,6 @@ header {
 }
 
 header.hidden {
-  transition: transform 0.3s ease-in-out
   transform: translateY(-100%);
 }
 
@@ -133,6 +119,29 @@ h1 {
   background-color: #555;
 }
 
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.user-details span {
+  font-size: 14px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.user-id {
+  color: #aaa;
+}
+
+.creation-date {
+  color: #999;
+}
+
 .user-info i {
   margin-left: auto;
   transition: transform 0.3s ease;
@@ -171,4 +180,17 @@ footer {
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.stats-container {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stats-container span {
+  font-weight: bold;
 }
