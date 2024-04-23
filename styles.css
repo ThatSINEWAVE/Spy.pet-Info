@@ -32,10 +32,10 @@ header {
 .stats-container {
   background-color: #444;
   padding: 10px;
-  border-radius: 5px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 .stats-container span {
