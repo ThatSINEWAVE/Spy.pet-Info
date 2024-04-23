@@ -19,9 +19,9 @@ function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
 
   scannerOutputData.forEach(user => {
     userHTML += `
-      <div class="user-container">
+      <div class="user-container" data-userid="${user.id}">
         <div class="user-info">
-          <img class="avatar" src="${user.avatar}" alt="${user.username}" width="32" height="32"> ${user.username}#${user.discriminator}
+          <img class="avatar" src="${user.avatar}" alt="${user.username}" width="32" height="32"> ${user.username} (${user.id})
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="server-list">
@@ -31,7 +31,7 @@ function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
     userServers.forEach(server => {
       userHTML += `
         <div class="server-row">
-          <i class="fas fa-server"></i> ${server.server_name}
+          <i class="fas fa-server"></i> ${server.server_name} (${server.serverid})
         </div>
       `;
     });
@@ -82,47 +82,46 @@ function setupSearchBar(scannerOutputData, serversAndIdsData) {
     const searchTerm = searchInput.value.toLowerCase();
 
     userContainers.forEach(container => {
-      const userInfo = container.querySelector('.user-info');
-      const username = userInfo.textContent.split('#')[0].toLowerCase();
-      const userData = scannerOutputData.find(user => user.username === username);
-      const userId = userData?.id.toLowerCase();
+      const userId = container.dataset.userid;
+      const userData = scannerOutputData.find(user => user.id === userId);
       const userServers = serversAndIdsData[userData?.id] || [];
 
-      let serverMatch = null;
-      const matchingData = [
-        username,
-        userId,
-        ...userServers.map(server => {
-          const serverIdMatch = server.serverid.toLowerCase() === searchTerm;
+      let matchFound = false;
+
+      if (userData?.username.toLowerCase().includes(searchTerm) || userData?.id.toLowerCase().includes(searchTerm)) {
+        matchFound = true;
+      } else {
+        for (const server of userServers) {
+          const serverIdMatch = server.serverid.toLowerCase().includes(searchTerm);
           const serverNameMatch = server.server_name.toLowerCase().includes(searchTerm);
 
           if (serverIdMatch || serverNameMatch) {
-            serverMatch = server;
+            matchFound = true;
+            break;
           }
+        }
+      }
 
-          return serverIdMatch || serverNameMatch;
-        })
-      ].some(data => data);
-
-      if (matchingData) {
+      if (matchFound) {
         container.style.display = 'block';
 
         const serverRows = container.querySelectorAll('.server-row');
         serverRows.forEach(row => {
           row.classList.remove('highlight');
-          if (serverMatch && row.textContent.includes(serverMatch.server_name)) {
+          const rowText = row.textContent.toLowerCase();
+          if (rowText.includes(searchTerm)) {
             row.classList.add('highlight');
           }
         });
 
-        if (serverMatch) {
-          userInfo.classList.add('open');
+        if (userServers.some(server => server.server_name.toLowerCase().includes(searchTerm) || server.serverid.toLowerCase().includes(searchTerm))) {
+          container.querySelector('.user-info').classList.add('open');
         } else {
-          userInfo.classList.remove('open');
+          container.querySelector('.user-info').classList.remove('open');
         }
       } else {
         container.style.display = 'none';
-        userInfo.classList.remove('open');
+        container.querySelector('.user-info').classList.remove('open');
       }
     });
   });
