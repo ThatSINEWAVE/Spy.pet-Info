@@ -54,6 +54,7 @@ function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
   let userHTML = '';
 
   scannerOutputData.forEach(user => {
+    const userServers = serversAndIdsData[user.id] || [];
     userHTML += `
       <div class="user-container" data-userid="${user.id}" data-creationdate="${user.creation_date}">
         <div class="user-info">
@@ -62,13 +63,13 @@ function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
             <span class="username">${user.username}</span>
             <span class="user-id">(${user.id})</span>
             <span class="creation-date">${user.creation_date}</span>
+            <span class="server-count">(${userServers.length} servers)</span>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="server-list">
     `;
 
-    const userServers = serversAndIdsData[user.id] || [];
     userServers.forEach(server => {
       userHTML += `
         <div class="server-row">
