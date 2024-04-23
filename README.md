@@ -32,6 +32,11 @@ All credit to the original files and investigations goes to their owners, in cas
 - `styles.css` - Main CSS file for the web interface.
 - `script.js` - Main JavaScript file for the web interface.
 
+<div align="center">
+
+# [Join my discord server](https://discord.gg/2nHHHBWNDw)
+
+</div>
 
 ## Bot accounts used by Spy.pet
 the following list contains confirmed bot accounts via an API vulnerability discovered by [kickthespy.pet](https://kickthespy.pet) and checked against Discord's API by myself to compile the list and the incoming site.
