@@ -36,10 +36,10 @@ function displayStats(numUsers, numServers) {
   statsContainer.classList.add('stats-container');
 
   const numUsersSpan = document.createElement('span');
-  numUsersSpan.textContent = `Number of bot accounts: ${numUsers}`;
+  numUsersSpan.textContent = `Number of unique bot accounts: ${numUsers}`;
 
   const numServersSpan = document.createElement('span');
-  numServersSpan.textContent = `Number of servers: ${numServers}`;
+  numServersSpan.textContent = `Number of unique servers: ${numServers}`;
 
   statsContainer.appendChild(numUsersSpan);
   statsContainer.appendChild(numServersSpan);
