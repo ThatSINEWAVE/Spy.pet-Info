@@ -29,6 +29,19 @@ header {
   -webkit-backdrop-filter: blur(10px);
 }
 
+.stats-container {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stats-container span {
+  font-weight: bold;
+}
+
 .btn {
   background-color: #950101;
   color: #fff;
