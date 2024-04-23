@@ -5,12 +5,48 @@ fetch('data/scanner_output.json')
     fetch('data/servers_and_ids.json')
       .then(response => response.json())
       .then(serversAndIdsData => {
+        const { uniqueUsers, uniqueServers } = getUniqueUsersAndServers(scannerOutputData, serversAndIdsData);
+        displayStats(uniqueUsers.length, uniqueServers.length);
         displayUsersAndServers(scannerOutputData, serversAndIdsData);
         setupSearchBar(scannerOutputData, serversAndIdsData);
       })
       .catch(error => console.error('Error loading servers_and_ids.json:', error));
   })
   .catch(error => console.error('Error loading scanner_output.json:', error));
+
+// Function to get unique users and servers
+function getUniqueUsersAndServers(scannerOutputData, serversAndIdsData) {
+  const uniqueUsers = new Set();
+  const uniqueServers = new Set();
+
+  scannerOutputData.forEach(user => {
+    uniqueUsers.add(user.username);
+    const userServers = serversAndIdsData[user.id] || [];
+    userServers.forEach(server => {
+      uniqueServers.add(server.server_name);
+    });
+  });
+
+  return { uniqueUsers: Array.from(uniqueUsers), uniqueServers: Array.from(uniqueServers) };
+}
+
+// Function to display stats
+function displayStats(numUsers, numServers) {
+  const statsContainer = document.createElement('div');
+  statsContainer.classList.add('stats-container');
+
+  const numUsersSpan = document.createElement('span');
+  numUsersSpan.textContent = `Number of bot accounts: ${numUsers}`;
+
+  const numServersSpan = document.createElement('span');
+  numServersSpan.textContent = `Number of servers: ${numServers}`;
+
+  statsContainer.appendChild(numUsersSpan);
+  statsContainer.appendChild(numServersSpan);
+
+  const main = document.querySelector('main .container');
+  main.insertBefore(statsContainer, main.firstChild);
+}
 
 // Function to display users and servers
 function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
