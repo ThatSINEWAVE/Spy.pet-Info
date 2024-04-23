@@ -36,10 +36,10 @@ function displayStats(numUsers, numServers) {
   statsContainer.classList.add('stats-container');
 
   const numUsersSpan = document.createElement('span');
-  numUsersSpan.textContent = `Number of unique bot accounts: ${numUsers}`;
+  numUsersSpan.textContent = `Number of bot accounts: ${numUsers}`;
 
   const numServersSpan = document.createElement('span');
-  numServersSpan.textContent = `Number of unique servers: ${numServers}`;
+  numServersSpan.textContent = `Number of servers: ${numServers}`;
 
   statsContainer.appendChild(numUsersSpan);
   statsContainer.appendChild(numServersSpan);
@@ -55,9 +55,14 @@ function displayUsersAndServers(scannerOutputData, serversAndIdsData) {
 
   scannerOutputData.forEach(user => {
     userHTML += `
-      <div class="user-container" data-userid="${user.id}">
+      <div class="user-container" data-userid="${user.id}" data-creationdate="${user.creation_date}">
         <div class="user-info">
-          <img class="avatar" src="${user.avatar}" alt="${user.username}" width="32" height="32"> ${user.username} (${user.id})
+          <img class="avatar" src="${user.avatar}" alt="${user.username}" width="32" height="32">
+          <div class="user-details">
+            <span class="username">${user.username}</span>
+            <span class="user-id">(${user.id})</span>
+            <span class="creation-date">${user.creation_date}</span>
+          </div>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="server-list">
@@ -119,12 +124,13 @@ function setupSearchBar(scannerOutputData, serversAndIdsData) {
 
     userContainers.forEach(container => {
       const userId = container.dataset.userid;
+      const creationDate = container.dataset.creationdate;
       const userData = scannerOutputData.find(user => user.id === userId);
       const userServers = serversAndIdsData[userData?.id] || [];
 
       let matchFound = false;
 
-      if (userData?.username.toLowerCase().includes(searchTerm) || userData?.id.toLowerCase().includes(searchTerm)) {
+      if (userData?.username.toLowerCase().includes(searchTerm) || userData?.id.toLowerCase().includes(searchTerm) || creationDate.toLowerCase().includes(searchTerm)) {
         matchFound = true;
       } else {
         for (const server of userServers) {
