@@ -24,10 +24,10 @@ All credit to the original files and investigations goes to their owners, in cas
 - `data/ids.json` - Data file made by [kickthespy.pet](https://kickthespy.pet) containing all bot accounts used by spy.pet.
 - `data/servers.json` - Data file scraped by [youcoldyet](https://github.com/youcoldyet/spy-bot-serverlist) containing all servers tracked by spy.pet.
 - `data/servers_and_ids.json` - Data file scraped by [youcoldyet](https://github.com/youcoldyet/spy-bot-serverlist) containing all servers and bot accounts used by spy.pet.
-- `kts_tester.py` - Script used to check guilds for bot accounts using [kickthespy.pet's](https://kickthespy.pet) endpoint
-- `kts_tester_output.json` - output file for `kts_tester.py`
-- `scanner.py` - Script used to check the Discord IDs inside `ids.json` with Discord's API
-- `scanner_output.json` - output file for `scanner.py`
+- `kts_tester.py` - Script used to check guilds for bot accounts using [kickthespy.pet's](https://kickthespy.pet) endpoint.
+- `kts_tester_output.json` - output file for `kts_tester.py`.
+- `scanner.py` - Script used to check the Discord IDs inside `ids.json` with Discord's API.
+- `scanner_output.json` - output file for `scanner.py`.
 - `index.html` - Main HTML file for the web interface.
 - `styles.css` - Main CSS file for the web interface.
 - `script.js` - Main JavaScript file for the web interface.
