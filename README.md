@@ -28,10 +28,13 @@ All credit to the original files and investigations goes to their owners, in cas
 - `data/detailed_servers_and_ids.json` - Data file compiled by merging `scanner_output.json` made by me and `servers_and_ids.json` made by [youcoldyet](https://github.com/youcoldyet/spy-bot-serverlist)
 - `data/all_known_servers_22042024.json` - Data file containing the full list of known servers by spy.pet
 - `data/all_tracked_servers_22042024` - Data file containing the full list of tracked servers by spy.pet
+- `data/detailed_all_known_servers_22042024.json` - Data file containing the full detailed list of known servers by spy.pet
+- `data/detailed_all_tracked_servers_22042024` - Data file containing the full detailed list of tracked servers by spy.pet
 - `kts_tester.py` - Script used to check guilds for bot accounts using [kickthespy.pet's](https://kickthespy.pet) endpoint.
 - `data/kts_tester_output.json` - Output file for `kts_tester.py`.
-- `scanner.py` - Script used to check the Discord IDs inside `ids.json` with Discord's API.
-- `data/scanner_output.json` - Output file for `scanner.py`.
+- `user_scanner.py` - Script used to check the Discord IDs inside `ids.json` with Discord's API.
+- `data/scanner_output.json` - Output file for `user_scanner.py`.
+- `server_scanner.py` - Script used to check server IDs inside `all_known_servers_22042024.json` and `all_tracked_servers_22042024` with Discord's API.
 - `index.html` - Main HTML file for the web interface.
 - `styles.css` - Main CSS file for the web interface.
 - `script.js` - Main JavaScript file for the web interface.
