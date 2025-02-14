@@ -5,6 +5,8 @@
 This repository serves as an index for all info the community has gathered on the Spy.pet situation and as well as my own tables and tools written for these investigations.
 All credit to the original files and investigations goes to their owners, in case I forgot to credit someone please contact me ASAP, thanks!
 
+**Spy.pet was taken down by Discord on 11.08.2024, this is just an archive of what bots where in each server.**
+
 </div>
 
 ## Credits
