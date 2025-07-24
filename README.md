@@ -43,7 +43,7 @@ All credit to the original files and investigations goes to their owners, in cas
 
 <div align="center">
 
-# [Join my discord server](https://discord.gg/2nHHHBWNDw)
+# [Join my discord server](https://thatsinewave.github.io/Discord-Redirect/)
 
 </div>
 
